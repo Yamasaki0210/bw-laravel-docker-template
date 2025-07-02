@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-//追記
 use App\Todo;
 
 class TodoController extends Controller
@@ -19,4 +18,12 @@ class TodoController extends Controller
         //dd('Hello World!');
     }
     // <ここまで>
+
+    public function create()
+{
+       // TODO: 第1引数を指定
+    return view('todo.create'); // 追記
+    //dd('新規作成画面のルート実行！');
 }
+}
+
