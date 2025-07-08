@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todo', [TodoController::class, 'index']) // ルート名の定義を追記;
+//Route::get('/todo', [TodoController::class, 'index']) // ルート名の定義を追記;
 
 Route::get('/todo', 'TodoController@index')->name('todo.index');
 
