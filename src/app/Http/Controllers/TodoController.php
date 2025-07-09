@@ -13,7 +13,7 @@ class TodoController extends Controller
         // 追加
         $todo = new Todo();
         $todos = $todo->all();
-        //dd($todos);　＜var_dumpみたいな感じ
+        //dd($todos);//var_dumpみたいな感じ
         return view('todo.index', ['todos' => $todos]); //[blade内での変数名 => 代入したい値] 修正
         //dd('Hello World!');
     }
